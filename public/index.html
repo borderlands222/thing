@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="UTF-8">
+	<title>RedThing</title>
+
+	<link href="/css/style.css" rel="stylesheet">
+
+	<script src="/js/index.js" defer></script>
+    </head>
+
+    <body>
+	<div class="container">
+	    <h1>RedThing</h1>
+
+	    <div class="url-container">
+		<input placeholder="RedGIFs URL" value="https://www.redgifs.com/users/borderlands222/collections/c8d00f6017" id="redgifsUrl" class="input">
+		<button id="redgifsLoad" class="button">Load</button>
+	    </div>
+
+	    <div id="collectionInfo" class="collection-info hidden">
+		<h2 id="collectionTitle" class="heading"></h2>
+
+		<video controls id="player" class="player"></video>
+
+		<img src="/icons/first.svg" id="previous" class="icon">
+		<img src="/icons/loop4.svg" id="shuffle" class="icon">
+		<img src="/icons/last.svg" id="next" class="icon">
+
+		<ul id="tags" class="tags"></ul>
+
+		<div>
+		    <span id="collectionSize"></span>
+		    <ul id="collectionContent"></ul>
+		</div>
+	    </div>
+	</div>
+    </body>
+</html>
